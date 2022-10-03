@@ -10,13 +10,14 @@ function RadioButtun() {
   ]; //create our options for radio group
   return (
     <View>
-      <Text> {chosenOption}</Text>
+      {/* <Text> {chosenOption}</Text> */}
       <RadioForm
         style={styles.redioBtn}
         radio_props={options}
-        initial={0} //initial value of this group
+        initial={-1} //initial value of this group
         onPress={(value) => {
           setChosenOption(value);
+          // console.log(value);
         }} //if the user changes options, set the new value
       />
     </View>
@@ -30,5 +31,6 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     marginRight: 150,
+    paddingVertical: 10,
   },
 });
