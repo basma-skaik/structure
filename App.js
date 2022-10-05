@@ -1,12 +1,15 @@
 import { ScrollView, StyleSheet, View } from "react-native";
-import Header from "./Components/Header";
-import QuestionsSection from "./Components/QuestionsSection";
+// import Header from "./Components/Header";
+// import QuestionsSection from "./Components/QuestionsSection";
+import LoginSection from "./Components/LoginSection";
+
 export default function App() {
   return (
     <View style={styles.container}>
-      <Header />
+      {/* <Header /> */}
       <ScrollView style={{ paddingVertical: 10 }}>
-        <QuestionsSection />
+        {/* <QuestionsSection /> */}
+        <LoginSection />
       </ScrollView>
     </View>
   );
